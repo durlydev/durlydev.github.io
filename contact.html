@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velvet Suit Studios | About</title>
+    <title>Velvet Suit Studios | Contact</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/6df4cd807a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,7 @@
                 <i class="fa-solid fa-user-tie"></i> Velvet Suit Studios</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar"></span>                    <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
@@ -38,30 +37,50 @@
         </div>
     </nav>
 
-    <!-- MAIN -->
-    <div class="main">
-        <div class="about__container">
-            <div class="about__content">
-                <h1>About Us</h1>
-                <p>With over 20 years of experience in the sign industry, Velvet Suit Studios is a locally owned and operated family business, centrally located in Toms River, NJ. Founded by Rich Kelly in 2004, our success has been driven primarily by the word-of-mouth recommendations from our loyal customers. Prior to entering the sign industry, Rich leveraged his artistic expertise to design for the casino industry, earning recognition as an award-winning designer. At Velvet Suit Studios, you benefit not only from years of experience in signage, but also from the expertise of an accomplished designer dedicated to helping you elevate your business or events.
-                <br />
-                <br />
-                Velvet Suit Studios offers truly customized solutions tailored to your unique needs. We provide a comprehensive range of services, including interior and exterior signage, vehicle graphics, site signs, business cards, menus, and much more. With us, you get the convenience of a one-stop shop to create a cohesive image for your business. From design to installation, we are here to guide you every step of the way.
-                <br />
-                <br />
-                Contact us today via the link below or by phone. If we are out on an installation, please leave a message, and we will return your call promptly. Thank you for considering Velvet Suit Studios!
-                    
-                </p>
-                <button class="main__btn"><a href="/contact.html">Contact Us!</a></button>
-            </div>
-            <div class="about_img--container"><img src="images/collage.jpg" alt="Collage of Rich Kelly and previous works" id="about__img"></div>
+    <div class="contact__main">
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" method="post" name="contact_form" action="form.php">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" 
+                        name="name" 
+                        placeholder="Your Name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" 
+                        name="email" 
+                        placeholder="Your Email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" 
+                        name="phone" 
+                        placeholder="Your Phone Number" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" 
+                            name="message" 
+                            placeholder="Your Message" 
+                            rows="5" required></textarea>
+                    <span class="error-message" 
+                        id="messageError"></span>
+                </div>
+                <button type="submit" 
+                        class="submit-button">
+                Send Message
+                </button>
+            </form>
         </div>
-     </div>
+    </div>
 
-     
-
-     <!-- FOOTER -->
-     <div class="footer__container">
+    <!-- FOOTER -->
+    <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
@@ -101,5 +120,5 @@
       </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
